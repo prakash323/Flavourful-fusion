@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .food-item {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 4px;
+            background-color: #f0f0f0;
+        }
+
+        .food-name {
+            flex-grow: 1;
+        }
+
+        .food-price {
+            margin-right: 20px;
+        }
+
+        .food-quantity {
+            width: 60px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        #checkoutButton {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        #checkoutButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Shop for Surplus Food</h1>
+
+        <div id="foodOptions">
+            <!-- Display available surplus food options with their prices -->
+            <div class="food-item">
+                <span class="food-name">Rice bags</span>
+                <span class="food-price">$10</span>
+                <input type="number" class="food-quantity" value="0">
+            </div>
+            <div class="food-item">
+                <span class="food-name">Pulses per kg</span>
+                <span class="food-price">$15</span>
+                <input type="number" class="food-quantity" value="0">
+            </div>
+            <!-- Add more food items as needed -->
+        </div>
+
+        <button id="checkoutButton">Checkout</button>
+    </div>
+
+    <script>
+        document.getElementById("checkoutButton").addEventListener("click", function() {
+            // Redirect to the calc page (calc.html)
+            window.location.href = "calc.html";
+        });
+
+        // Adjust prices based on the quantity selected
+        const foodItems = document.querySelectorAll(".food-item");
+        foodItems.forEach(item => {
+            const quantityInput = item.querySelector(".food-quantity");
+            quantityInput.addEventListener("change", function() {
+                const quantity = parseInt(this.value);
+                const price = parseInt(item.querySelector(".food-price").textContent.slice(1)); // Remove $ sign
+                const totalPrice = quantity * price;
+                item.querySelector(".food-price").textContent = "$" + totalPrice;
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,142 @@
+.Desktop1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: white;
+}
+
+.FoodBackgroundBurgersHandDrawnIllustrationForYourDesignWallpaperMenuTextile1 {
+    width: 1440px;
+    height: 1024px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.Rectangle10 {
+    width: 664px;
+    height: 610px;
+    position: absolute;
+    left: 388px;
+    top: 177px;
+    background: rgba(57.32, 108.91, 56.27, 0.30);
+    box-shadow: -42.46666717529297px 42.46666717529297px 42.46666717529297px rgba(255, 255, 255, 0.10) inset;
+    border-radius: 30px;
+    backdrop-filter: blur(84.93px);
+}
+
+.AlreadyHavingAnAccount {
+    width: 347px;
+    height: 18px;
+    position: absolute;
+    left: 520px;
+    top: 679px;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.Login {
+    position: absolute;
+    left: 879px;
+    top: 677px;
+}
+
+.SignIn {
+    left: 649px;
+    top: 205px;
+    position: absolute;
+    color: black;
+    font-size: 36px;
+    font-family: Inknut Antiqua;
+    font-weight: 600;
+    text-decoration: underline;
+    word-wrap: break-word;
+}
+
+.UserName {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 528px;
+    top: 335px;
+}
+
+.Rectangle9 {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #D9D9D9;
+    border-radius: 100px;
+}
+
+.EmailId {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 533px;
+    top: 447px;
+}
+
+.Rectangle8 {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #D9D9D9;
+    border-radius: 100px;
+}
+
+.Password {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 528px;
+    top: 570px;
+}
+
+.Rectangle6 {
+    width: 384px;
+    height: 75px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background: #D9D9D9;
+    border-radius: 100px;
+}
+
+.Rectangle16 {
+    width: 162px;
+    height: 32px;
+    position: absolute;
+    left: 622px;
+    top: 736px;
+    background: #78EB5B;
+    border-radius: 100px;
+}
+
+.Rectangle17 {
+    width: 162px;
+    height: 32px;
+    position: absolute;
+    left: 618px;
+    top: 736px;
+    background: #78EB5B;
+    border-radius: 100px;
+}
+
+.Enter {
+    left: 673px;
+    top: 735px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+}

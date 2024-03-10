@@ -1,0 +1,127 @@
+.Rectangle18 {
+    width: 136px;
+    height: 36px;
+    left: 643px;
+    top: 719px;
+    position: absolute;
+    background: #78EB5B;
+    border-radius: 100px;
+  }
+  
+  .Enter {
+    left: 684px;
+    top: 719px;
+    position: absolute;
+    color: black;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+    word-wrap: break-word;
+  }
+  
+  .Rectangle11 {
+    width: 478.52px;
+    height: 93.46px;
+    left: 481px;
+    top: 410px;
+    position: absolute;
+    background: #009494;
+    border-radius: 124.62px;
+  }
+  
+  .Rectangle13 {
+    width: 478.52px;
+    height: 93.46px;
+    left: 481px;
+    top: 565.77px;
+    position: absolute;
+    background: #009494;
+    border-radius: 124.62px;
+  }
+  
+  .Volunteer {
+    left: 613.09px;
+    top: 584.46px;
+    position: absolute;
+    color: black;
+    font-size: 37.38px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  .Donor {
+    left: 651.72px;
+    top: 428.69px;
+    position: absolute;
+    color: black;
+    font-size: 37.38px;
+    font-family: Poppins;
+    font-weight: 600;
+    word-wrap: break-word;
+  }
+  
+  .AvailableFoodInformation {
+    left: 431px;
+    top: 65px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  .Dishes {
+    left: 120px;
+    top: 203px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  .Vector {
+    width: 37px;
+    height: 14px;
+    position: absolute;
+    transform: rotate(-180deg);
+    transform-origin: 0 0;
+    background: black;
+  }
+  
+  .Groceries {
+    left: 117px;
+    top: 313px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  
+  .IcOutlineMenu {
+    width: 50px;
+    height: 50px;
+    left: 40px;
+    top: 45px;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+  }
+  
+  .Bakery {
+    left: 117px;
+    top: 428px;
+    position: absolute;
+    color: black;
+    font-size: 40px;
+    font-family: Poppins;
+    font-weight: 500;
+    word-wrap: break-word;
+  }
+  

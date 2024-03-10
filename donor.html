@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Waste Reduction Platform - Donor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            background-color: #fff;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="number"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        .donor-type {
+            margin-bottom: 15px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #submittedDonation {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #dff0d8;
+            border: 1px solid #d6e9c6;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .home-button {
+            display: block;
+            text-align: center;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Donor Information</h1>
+        <label for="organization">Organization Name:</label>
+        <input type="text" id="organization" placeholder="Enter organization name">
+        
+        <label>Donor Type:</label>
+        <div class="donor-type">
+            <input type="radio" name="donorType" value="individual"> Individual
+            <input type="radio" name="donorType" value="restaurant"> Restaurant
+            <input type="radio" name="donorType" value="bakery"> Bakery
+            <input type="radio" name="donorType" value="ngo"> NGO
+        </div>
+        
+        <label for="address">Address:</label>
+        <textarea id="address" placeholder="Enter address"></textarea>
+
+        <label for="contact">Contact Number:</label>
+        <input type="tel" id="contact" placeholder="Enter contact number">
+
+        <label for="foodType">Surplus Food Type:</label>
+        <input type="text" id="foodType" placeholder="Enter surplus food type">
+
+        <label for="price">Price:</label>
+        <input type="number" id="price" placeholder="Enter price">
+
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" placeholder="Enter quantity">
+
+        <button onclick="submitDonation()">Submit Donation</button>
+
+        <div id="submittedDonation">
+            <h2>Donation Details</h2>
+            <p><strong>Organization Name:</strong> <span id="submittedOrganization"></span></p>
+            <p><strong>Donor Type:</strong> <span id="submittedDonorType"></span></p>
+            <p><strong>Address:</strong> <span id="submittedAddress"></span></p>
+            <p><strong>Contact Number:</strong> <span id="submittedContact"></span></p>
+            <p><strong>Surplus Food Type:</strong> <span id="submittedFoodType"></span></p>
+            <p><strong>Price:</strong> $<span id="submittedPrice"></span></p>
+            <p><strong>Quantity:</strong> <span id="submittedQuantity"></span></p>
+        </div>
+
+        <!-- Home button -->
+        <a href="index.html" class="home-button">Home</a>
+    </div>
+
+    <script>
+        function submitDonation() {
+            // Get form input values
+            var organization = document.getElementById('organization').value;
+            var donorType = document.querySelector('input[name="donorType"]:checked').value;
+            var address = document.getElementById('address').value;
+            var contact = document.getElementById('contact').value;
+            var foodType = document.getElementById('foodType').value;
+            var price = document.getElementById('price').value;
+            var quantity = document.getElementById('quantity').value;
+
+            // Display submitted donation details
+            document.getElementById('submittedOrganization').innerText = organization;
+            document.getElementById('submittedDonorType').innerText = donorType;
+            document.getElementById('submittedAddress').innerText = address;
+            document.getElementById('submittedContact').innerText = contact;
+            document.getElementById('submittedFoodType').innerText = foodType;
+            document.getElementById('submittedPrice').innerText = price;
+            document.getElementById('submittedQuantity').innerText = quantity;
+            document.getElementById('submittedDonation').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

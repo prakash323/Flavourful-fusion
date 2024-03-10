@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+</head>
+<body>
+    <h1>Shopping Cart</h1>
+
+    <!-- Your shopping cart content here -->
+
+    <button id="checkoutButton">Checkout</button>
+
+    <script>
+        // Function to calculate the total of prices
+        function calculateTotal() {
+            // Your logic to calculate the total of prices here
+            // For example, let's say you have an array of prices
+            var prices = [10, 20, 30]; // Replace with your actual prices array
+            var total = prices.reduce((acc, curr) => acc + curr, 0);
+            return total;
+        }
+
+        // Add event listener to the checkout button
+        document.getElementById("checkoutButton").addEventListener("click", function() {
+            // Calculate the total of prices
+            var totalPrice = calculateTotal();
+            
+            // Display confirmation dialog with total price
+            var confirmation = confirm("Total Price: $" + totalPrice.toFixed(2) + "\n\nDo you want to proceed?");
+            
+            // Check user's choice
+            if (confirmation) {
+                // Redirect to index.html if user clicks OK
+                window.location.href = "index.html";
+            } else {
+                // Redirect to shop.html if user clicks Cancel
+                window.location.href = "shop.html";
+            }
+        });
+    </script>
+</body>
+</html>

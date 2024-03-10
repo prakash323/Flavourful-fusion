@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Role</title>
+</head>
+<body>
+    <h1>Select Your Role</h1>
+    <form id="roleForm">
+        <input type="radio" id="donor" name="role" value="donor">
+        <label for="donor">Donor</label><br>
+        <input type="radio" id="reciever" name="role" value="reciever">
+        <label for="reciever">Receiver</label><br>
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        document.getElementById("roleForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Get the selected role
+            var role = document.querySelector('input[name="role"]:checked').value;
+            
+            // Redirect based on the selected role
+            if (role === "donor") {
+                window.location.href = "donor.html";
+            } else if (role === "reciever") {
+                window.location.href = "reciever.html";
+           
+            }
+        });
+    </script>
+</body>
+</html>
